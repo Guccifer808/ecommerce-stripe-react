@@ -26,6 +26,7 @@ const Pay = () => {
           { tokenId: stripeToken.id, amount: 7500 }
         );
         navigate('/success'); //using to redirect to success page
+        console.log(res);
       } catch (err) {
         console.log(err);
       }
